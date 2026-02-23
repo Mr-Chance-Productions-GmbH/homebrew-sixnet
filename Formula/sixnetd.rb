@@ -11,14 +11,6 @@ class Sixnetd < Formula
     system "go", "build", "-o", bin/"sixnetd", "./cmd/sixnetd"
   end
 
-  service do
-    run [opt_bin/"sixnetd"]
-    keep_alive true
-    require_root true
-    log_path "/var/log/sixnetd.log"
-    error_log_path "/var/log/sixnetd.log"
-  end
-
   test do
     assert_match "0.1.0", shell_output("#{bin}/sixnetd --version")
   end
