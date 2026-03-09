@@ -1,10 +1,7 @@
 cask "sixnet-client" do
-  # Stub — release pending. Fill in version, sha256, and url once
-  # SixnetClient.app is built and uploaded as a GitHub release asset.
-
-  # version ""
-  # sha256 ""
-  # url "https://github.com/Mr-Chance-Productions-GmbH/sixnet-client/releases/download/v#{version}/SixnetClient.dmg"
+  version "0.1.0"
+  sha256 "6713f5a5351f9ce3e2f8f4b001fb61e4c863bf87b7a8d4c41fd089d44250a68c"
+  url "https://github.com/Mr-Chance-Productions-GmbH/sixnet-client/releases/download/v0.1.0/SixnetClient-0.1.0.dmg"
 
   name "Sixnet Client"
   desc "macOS menu bar VPN client for sixnet"
@@ -12,5 +9,5 @@ cask "sixnet-client" do
 
   depends_on formula: "Mr-Chance-Productions-GmbH/sixnet/sixnetd"
 
-  # app "SixnetClient.app"
+  app "SixnetClient.app"
 end
