@@ -1,7 +1,7 @@
 cask "sixnet-client-dev" do
-  version "2026.03.11.4"
-  sha256 "7af0e968f1271573fa8f569fc4916f9992f5bf1cb7a14fb763ce6f88f9ff7879"
-  url "https://github.com/Mr-Chance-Productions-GmbH/sixnet-client/releases/download/dev/SixnetClient-dev-2026.03.11.4.dmg"
+  version "2026.03.11.5"
+  sha256 "387fbdf13589744cdb528215e421174fa6a2485717d28668523cd456f0381924"
+  url "https://github.com/Mr-Chance-Productions-GmbH/sixnet-client/releases/download/dev/SixnetClient-dev-2026.03.11.5.dmg"
 
   name "Sixnet Client (dev)"
   desc "Development channel — macOS menu bar VPN client for sixnet"
