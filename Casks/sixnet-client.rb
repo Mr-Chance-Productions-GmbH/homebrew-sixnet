@@ -1,7 +1,7 @@
 cask "sixnet-client" do
-  version "0.1.0"
-  sha256 "4397ac3bd9ece19df7bb02e3763781dc66f7fad03e7d146b04fa5f061c682549"
-  url "https://github.com/Mr-Chance-Productions-GmbH/sixnet-client/releases/download/v0.1.0/SixnetClient-0.1.0.dmg"
+  version "0.2.0"
+  sha256 "97c670833db7530ecb736f20323099c498d717fcf9bb96aedc5f94f4f2cef0d4"
+  url "https://github.com/Mr-Chance-Productions-GmbH/sixnet-client/releases/download/v0.2.0/SixnetClient-0.2.0.dmg"
 
   name "Sixnet Client"
   desc "macOS menu bar VPN client for sixnet"
