@@ -1,7 +1,7 @@
 cask "sixnet-client-dev" do
-  version "2026.03.11.5"
-  sha256 "387fbdf13589744cdb528215e421174fa6a2485717d28668523cd456f0381924"
-  url "https://github.com/Mr-Chance-Productions-GmbH/sixnet-client/releases/download/dev/SixnetClient-dev-2026.03.11.5.dmg"
+  version "2026.10.24.6"
+  sha256 "ec4a56045ecaf28730a44bc1f56409a3adfdf8de2425e09a40c43513ef47f00d"
+  url "https://github.com/Mr-Chance-Productions-GmbH/sixnet-client/releases/download/dev/SixnetClient-dev-2026.10.24.6.dmg"
 
   name "Sixnet Client (dev)"
   desc "Development channel — macOS menu bar VPN client for sixnet"
@@ -11,8 +11,7 @@ cask "sixnet-client-dev" do
 
   app "SixnetClient Dev.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-      args: ["-rd", "com.apple.quarantine", "#{appdir}/SixnetClient Dev.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-rd", "com.apple.quarantine", "{{appdir}}/SixnetClient Dev.app"]
   end
 end
